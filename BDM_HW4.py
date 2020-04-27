@@ -55,7 +55,7 @@ def processTrips(pid, records):
     counts = {}
 
     for row in reader:
-        if len(row)=18:
+        if len(row)==18:
             try:
                 p_pick = geom.Point(proj(float(row[5]), float(row[6]))) #(pick_long,pick_lan)
                 p_drop = geom.Point(proj(float(row[9]), float(row[10]))) #(dropoff_long,dropoff_lan)
